@@ -1,0 +1,6 @@
+{
+  "name": "AI Maturity Level",
+  "description": "Evaluación del nivel de madurez en Inteligencia Artificial para organizaciones.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

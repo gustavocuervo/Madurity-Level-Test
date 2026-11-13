@@ -1,0 +1,26 @@
+{
+  "entities": {
+    "Assessment": {
+      "title": "Assessment",
+      "description": "AI maturity assessment submission",
+      "type": "object",
+      "properties": {
+        "email": { "type": "string", "description": "User email" },
+        "company": { "type": "string", "description": "Company name" },
+        "role": { "type": "string", "description": "Job role" },
+        "date": { "type": "string", "description": "Date of assessment" },
+        "time": { "type": "string", "description": "Time of assessment" },
+        "score": { "type": "number", "description": "Calculated score" },
+        "stage": { "type": "string", "description": "Maturity stage" },
+        "createdAt": { "type": "string", "description": "Creation timestamp" }
+      },
+      "required": ["email", "company", "role", "score", "stage"]
+    }
+  },
+  "firestore": {
+    "/assessments/{assessmentId}": {
+      "schema": { "$ref": "#/entities/Assessment" },
+      "description": "Collection of AI maturity assessments"
+    }
+  }
+}
